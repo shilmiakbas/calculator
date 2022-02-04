@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Spline+Sans:wght@300&display=swap" rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto Mono', monospace;
+font-family: 'Spline Sans', sans-serif;
+    }
+
+    body {
+        background-color: black;
+
+
+    }
+
+    #container {
+   background-color: black;
+   height: 400px;
+   text-align: center;
+   width: 255px;
+   margin: 50px auto; 
+    }
+
+    button {
+        margin: 5px 5px 5px;
+        padding: 16px;
+        border-radius: 50px;
+        border:black;
+        background-color: rgb(29, 29, 29);
+        color: white;
+        width: 50.52px;
+        transition-duration: 0.5s;
+        font-size: 100%;
+
+    }
+
+    button:hover{
+        cursor: pointer;
+        opacity: 0.7;
+
+        transition: 0.5s;
+        
+    }
+    
+    .btn-right {
+        background-color: chocolate;
+    }
+    .btn-right:active{
+        background-color: white;
+        color: chocolate;
+    }
+    .btn-top {
+        background-color: white;
+        color: black;
+    }
+
+    #result {
+    width: 100%;
+    font-size: 35px;
+    color: white;
+    text-align: right;
+    width: 95%;
+    height: 25%;
+    padding-top: 30px;
+}
+       
+</style>
+
+ 
+
+<body>
+
+    
+    <div id="container">
+
+        <div id="result">
+
+        </div>
+        <div class="row">
+            <button id="delete" class="btn-top resultoperator  " >AC</button>
+            <button class="btn-top operator">+/-</button>
+            <button value="%" class="btn-top operator">%</button>
+            <button value="/" class="btn-right operator">/</button>
+        </div>
+        <div class="row">
+            <button class="num" value="7">7</button>
+            <button class="num" value="8">8</button>
+            <button class="num" value="9">9</button>
+            <button value="*" class="btn-right operator">X</button>
+        </div>
+        <div class="row">
+            <button class="num" value="4">4</button>
+            <button class="num" value="5">5</button>
+            <button class="num" value="6">6</button>
+            <button value="-" class="btn-right operator">-</button>
+        </div>
+        <div class="row">
+            <button class="num" value="1">1</button>
+            <button class="num" value="2">2</button>
+            <button class="num" value="3">3</button>
+            <button value="+" class="btn-right operator">+</button>
+        </div>
+        <div class="row">
+            <button class="num" value="0" style="width: 45%;">0</button>
+            <button>,</button>
+            <button id="equation" class="btn-right resultOperator">=</button>
+    
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
