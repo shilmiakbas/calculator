@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+font-family: 'Spline Sans', sans-serif;
+}
+
+body {
+    background-color: black;
+
+
+}
+
+#container {
+background-color: black;
+height: 400px;
+text-align: center;
+width: 255px;
+margin: 50px auto; 
+}
+
+button {
+    margin: 5px 5px 5px;
+    padding: 16px;
+    border-radius: 50px;
+    border:black;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    width: 50.52px;
+    transition-duration: 0.5s;
+    font-size: 100%;
+
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: 0.7;
+
+    transition: 0.5s;
+    
+}
+
+.btn-right {
+    background-color: chocolate;
+}
+.btn-right:active{
+    background-color: white;
+    color: chocolate;
+}
+.btn-top {
+    background-color: white;
+    color: black;
+}
+
+#result {
+width: 100%;
+font-size: 35px;
+color: white;
+text-align: right;
+width: 95%;
+height: 25%;
+padding-top: 30px;
+}
